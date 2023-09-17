@@ -12,7 +12,7 @@
     <header>
       <!-- navbar -->
       <nav class>
-        <div class="logo">iValidate</div>
+        <div class="logo"><a href="/img/email.svg"></a>iValidate</div>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -20,7 +20,32 @@
         </ul>
       </nav>
     </header>
-    <main>=-----</main>
+    <main>
+      <div class="container">
+        <h1>Enter Your Email to Validate</h1>
+        <form action="/submit" method="post">
+          <!-- Text input for username -->
+          <label for="username">Enter Your Email to validate</label>
+          <br />
+          <input
+            placeholder="Enter Your Email to validate"
+            type="text"
+            id="username"
+            name="username"
+            required
+            width=""
+          />
+          <br /><br />
+
+          <!-- Submit button -->
+          <input id="submitBtn" type="submit" class="btn" value="Submit" />
+        </form>
+      </div>
+      <div class="container">
+        <h2>Your results</h2>
+        <div id="resultCont">Your result will show here</div>
+      </div>
+    </main>
     <footer>Copyright iValidate.com || all right reserved</footer>
   </body>
 </html>

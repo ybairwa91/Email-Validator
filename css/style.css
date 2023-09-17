@@ -41,6 +41,58 @@ ul li a:hover {
 }
 
 
+main {
+    min-height: 80vh;
+    padding: 2px;
+}
+
+.container h1 {
+    padding: 12px 0;
+
+}
+
+.container {
+    /* background-color: azure; */
+    max-width: 80vw;
+    margin: auto;
+    padding: 2rem;
+}
+
+label {
+    font-size: 20px;
+    font: bold;
+
+}
+
+input {
+
+    min-width: 244px;
+    padding: 3px 12px;
+    border: 1.8px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    background: rgb(40, 40, 40);
+    text: white;
+    color: white;
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+.resultCont h2 {
+    color: black;
+}
+
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+
+
+
 footer {
     background-color: rgb(40, 40, 40);
     color: white;
@@ -48,5 +100,28 @@ footer {
     padding: 1rem;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 
+}
+
+
+
+@media only screen and (max-width:600px) {
+    body {
+        /* background-color: skyblue; */
+    }
+
+    .container {
+        font-size: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+
+    }
+
+
+    .logo {
+        padding: 6px 0;
+    }
 }
